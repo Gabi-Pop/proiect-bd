@@ -1,1 +1,15 @@
-
+Rol ||--o{ Utilizator : are
+Angajat |o--o| Utilizator : are
+Client |o--o| Utilizator : are
+Departament ||--o{ Angajat : include
+Angajat ||--o{ Pontaj : inregistreaza
+Pontaj }o--|| Sarcina : are
+Angajat ||--o{ Sarcina : primeste
+Proiect ||--o{ Sarcina : contine
+Angajat ||--o{ Proiect : conduce
+Angajat }o--o{ Proiect : lucreaza
+Proiect ||--o{ Livrabil : preda
+Angajat |o--o{ Problema_Tehnica : rezolva
+Client ||--o{ Problema_Tehnica : semnaleaza
+Client ||--o{ Proiect : comanda
+Proiect ||--o{ Problema_Tehnica : are
